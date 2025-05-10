@@ -37,7 +37,7 @@ function launchConfetti() {
   confetti({
     particleCount: 70,
     spread: 80,
-    origin: { y: 0.1 }
+    origin: { y: 0.3 }
   });
 }
 

@@ -67,14 +67,13 @@ body {
 .subtitle {
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
-  font-size: 1rem;
+  font-size: 5vw; /* Initial font size based on viewport width */
   color: #777;
   font-weight: 500;
   display: inline-block;
-  max-width: 100%;
-  transform: scale(1);
-  white-space: nowrap;
+  box-sizing: border-box; /* Ensure padding and borders are included in width */
 }
+
 
 .card-content .subtitle {
   font-size: calc(1vw + 0.5rem);
