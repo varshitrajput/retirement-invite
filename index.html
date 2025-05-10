@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retirement Party Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background:
+        linear-gradient(135deg, rgba(187, 222, 251, 1), rgba(227, 242, 253, 0.9)) no-repeat center center,
+        url('img6.png') repeat;
+      background-size: cover, 300px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      border-radius: 30px;
+      max-width: 480px;
+      width: 90%;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      border: 4px solid transparent;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image:
+        linear-gradient(white, white),
+        linear-gradient(to right, #2196f3, #21cbf3);
+      animation: popIn 0.8s ease-out;
+    }
+
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .slick-carousel {
+      margin-bottom: 0;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    .card-content {
+      padding: 1.5rem 2rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.2rem;
+      margin-bottom: 0.1rem;
+      color: rosybrown;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .subtitle {
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      font-size: 0.8rem;
+      color: #777;
+      font-weight: 500;
+    }
+
+    .honoree {
+      margin-top: 0;
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+      margin: 0.6rem 0;
+    }
+
+    .highlight {
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    .map-button, .contact-button, .whatsapp-button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin: 0.5rem;
+    }
+
+    .map-button {
+      background: linear-gradient(135deg, #2196f3, #21cbf3);
+      color: white;
+      box-shadow: 0 8px 16px rgba(33, 203, 243, 0.4);
+    }
+
+    .map-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px rgba(33, 203, 243, 0.6);
+    }
+
+    .contact-button {
+      background: linear-gradient(135deg, #ff4081, #ff80ab);
+      color: white;
+      box-shadow: 0 8px 16px rgba(255, 128, 171, 0.4);
+    }
+
+    .contact-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px rgba(255, 128, 171, 0.6);
+    }
+
+    .whatsapp-button {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      box-shadow: 0 8px 16px rgba(37, 211, 102, 0.4);
+    }
+
+    .whatsapp-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px rgba(37, 211, 102, 0.6);
+    }
+
+    .countdown {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #444;
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      .card-content {
+        padding: 1.2rem;
+      }
+      .title {
+        font-size: 1.6rem;
+      }
+      .honoree {
+        font-size: 1.4rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999;"></canvas>
+
+  <div class="card">
+    <div class="slick-carousel">
+      <div><img src="img4.jpg" alt="Image 1"></div>
+      <div><img src="img3.jpg" alt="Image 2"></div>
+      <div><img src="img1.jpg" alt="Image 3"></div>
+      <div><img src="img2.jpg" alt="Image 4"></div>
+      <div><img src="img5.jpg" alt="Image 5"></div>
+    </div>
+
+    <div class="card-content">
+      <h1 class="title">Retirement Celebration</h1>
+      <p class="subtitle">Please join us to celebrate the remarkable career of</p>
+      <h1 class="honoree highlight">Virender Singh Rajput</h1>
+
+      <p><strong>Date:</strong> 30th May 2025</p>
+      <p><strong>Time:</strong> 6:00 PM onwards</p>
+      <p><strong>Venue:</strong> B-146 Brij Vihar, Ghaziabad, UP</p>
+
+      <a class="map-button" href="https://www.google.com/maps/dir/?api=1&destination=28.6709774,77.3332115" target="_blank">Directions</a>
+      <a class="contact-button" href="tel:9899478489">Call</a>
+      <a class="whatsapp-button" href="https://wa.me/9899478489" target="_blank">WhatsApp</a>
+
+      <div class="countdown" id="countdown">Loading countdown...</div>
+    </div>
+  </div>
+
+  <!-- Slick Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- Confetti JS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slick-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+
+    function updateCountdown() {
+      const eventDate = new Date('May 30, 2025 18:00:00').getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        document.getElementById('countdown').innerText = "The event has started!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('countdown').innerText =
+        `Countdown: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Confetti blast function
+    function launchConfetti() {
+      confetti({
+        particleCount: 70,
+        spread: 80,
+        origin: { y: 0.4 }
+      });
+    }
+
+    // Initial blast
+    launchConfetti();
+
+    // Burst every 5 seconds
+    setInterval(launchConfetti, 5000);
+  </script>
+</body>
+</html>
